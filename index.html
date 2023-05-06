@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <title>Binary Tree</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Persistent  Segment Tree Visualizer</h1>
+        <div class="findContainer"></div>
+        <input  type="text" id="inp" cols="30" rows="10" />
+        <button onclick="action()" class="btn" > Create Tree </button>
+        <br><br><br>
+
+        <div>
+          <label> Type </label>
+          <select id="types" onchange="">
+            <option value="volvo">sum</option>
+            <option value="saab">min</option>
+            <option value="mercedes">max</option>
+            <option value="audi">xor</option>
+          </select>
+        </div>
+        <br>
+        <button onclick="currentAction()" class="btn" id="currentVer" style="width: 150px;"> Current Version </button>
+        <br><br>
+
+        <div>
+          <label id="Index"> Index </label> <input type="number" name="" id="index">
+          <label id="newValue"> Value </label> <input type="number" name="" id="value">
+          <button onclick="updatAction()" class="btn" id="update"> Update </button>
+        </div>
+        
+        <br>
+
+        <div>
+          <label> Version </label> <input type="number" name="" id="version">
+          <label> Start </label> <input type="number" name="" id="start">
+          <label> End </label> <input type="number" name="" id="end">
+          <button onclick="queryAction()" class="btn" id="view"> View </button>
+        </div>
+
+        <br>
+        <label> Query Result : </label> <label id="result"></label>
+
+        <br><br>
+
+        <div class="box graph" id="tree"></div>
+        <br><br><br><br><br>
+
+    </div>
+
+    <a href="https://github.com/saliherdemk/Binary-Tree-Visualization" target="blank">
+        <img src="media/githubLogo.png" alt="" id="github" style="position: absolute;right:0px">
+    </a>
+
+</body>
+<script src="./js/index.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/draw.js"></script>
+<script src="./js/d3js.js"></script>
+
+</html>
